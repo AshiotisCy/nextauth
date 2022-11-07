@@ -58,7 +58,7 @@ export default function Header() {
                 className={styles.button}
                 onClick={ async () => {
                   // await signOut({callbackUrl: "/api/auth/logout"})
-                  await signOut({redirect: false}).then(() => push(`https://locibuddy.com/realms/AngelDemo/protocol/openid-connect/logout?redirect_uri=${encodeURIComponent("http://localhost:3000")}`))
+                  await signOut({redirect: false}).then(() => push(`https://locibuddy.com/realms/AngelDemo/protocol/openid-connect/logout`))
                 }}
               >
                 Sign out
