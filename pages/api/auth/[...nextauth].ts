@@ -5,7 +5,7 @@ export const authOptions: NextAuthOptions = {
   providers: [
     KeycloakProvider({
       clientId: "Angel",
-      clientSecret: "M8iv5kpAwJMcl1dcPcylsSFEYlqOqTdH",
+      clientSecret: `${process.env.NEXT_PUBLIC_SECRET}`,
       issuer: "https://locibuddy.com/realms/AngelDemo",
     }),
   ],
