@@ -13,7 +13,7 @@ export const authOptions: NextAuthOptions = {
     colorScheme: "dark",
   },
   callbacks: {},
-  secret: "M8iv5kpAwJMcl1dcPcylsSFEYlqOqTdH",
+  secret: process.env.NEXT_PUBLIC_SECRET,
   session:{
     strategy:"jwt"
   },
